@@ -124,5 +124,9 @@ a {
     .card {
         margin: 15px 15px 15px 15px;
     }
+        .container__Card__Buttons {
+            width: 90%;
+            margin: auto;
+        }
 
 }
