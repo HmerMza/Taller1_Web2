@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:ital,wght@0,900;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:ital,wght@0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap");
 
 body {
-    background-color: whitesmoke;
+background-color: whitesmoke;
 }
 
 .header {
-    font-family: 'Sen', sans-serif;
+font-family: "Sen", sans-serif;
     font-size: xx-large;
     text-transform: uppercase;
     text-align: center;
-    background-color: #EEEEEE;
+background-color: #eeeeee;
 }
 
 /*Contenedor de las tarjetas*/
 .container__cards {
-    width: 90%;
+width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -26,7 +25,7 @@ body {
 
 /*las tarjetas*/
 .card {
-    background-size: cover;
+background-size: cover;
     background-position: center;
     width: 250px;
     height: 500px;
@@ -39,34 +38,31 @@ body {
     margin-bottom: 25px;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 /*los Titulos*/
 .card h3 {
-    font-family: 'Roboto', sans-serif;
+font-family: "Roboto", sans-serif;
     font-weight: 900;
     size: 21px;
 }
 
-
-
 a {
-    text-decoration: none;
+text-decoration: none;
     color: white;
 }
 
 /*Contenedor de los botones*/
 
 .container__Buttons {
-    display: flex;
+display: flex;
     justify-content: center;
     margin-top: 5%;
 }
 
 .container__Card__Buttons {
-    width: 400px;
-    background-image: url('https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg?w=1380&t=st=1691877806~exp=1691878406~hmac=8187cc346b2250081014288f777ae68b2fc9201f6a1db324c3eda33011108426');
+width: 400px;
+background-image: url("https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg?w=1380&t=st=1691877806~exp=1691878406~hmac=8187cc346b2250081014288f777ae68b2fc9201f6a1db324c3eda33011108426");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -74,20 +70,19 @@ a {
     padding: 20px;
     border-radius: 25px;
     color: white;
-    font-family: 'Raleway', sans-serif;
+font-family: "Raleway", sans-serif;
     font-weight: 0;
 }
 
 .container__Buttons__accion {
-    display: flex;
+display: flex;
     justify-content: space-between;
     font-weight: 0;
-
 }
 
 /*Botones del Contador*/
 .myButton {
-    background-color: rgba(255, 255, 255, 0.4);
+background-color: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
@@ -96,37 +91,38 @@ a {
     padding: 6px 24px;
     margin: 0 10px;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-style: normal;
-
 }
 
 .myButton:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+background-color: rgba(255, 255, 255, 0.7);
 }
 
 .myButton:active {
-    position: relative;
+position: relative;
     top: 1px;
 }
 
 /*Para la Pantalla mas pequeña*/
 @media (max-width: 768px) {
-    .container__cards {
+.container__Card__Buttons {
+        width: 90%;
         margin: auto;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
+  .container__cards {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+  }
 
-    .card {
-        margin: 15px 15px 15px 15px;
-    }
-        .container__Card__Buttons {
-            width: 90%;
-            margin: auto;
-        }
-
-}
+  .card {
+      margin: 15px 15px 15px 15px;
+  }
+  .myButton {
+      padding: 3px 18px;
+  }
+  }
