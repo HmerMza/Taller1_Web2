@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import CompCard from "./components/CompCard";
 import CompContador from "./components/CompContador";
@@ -56,8 +56,19 @@ const animales = [
   },
 ];
 
+//cargo los datos guardados en el localStarage
+const valorInicialCount = JSON.parse(localStorage.getItem("count")) || 0;
+
 function App() {
-  const [count, setCount] = useState(0);
+  //le paso los datos obtenidos del local storage al contador
+  const [count, setCount] = useState(valorInicialCount);
+
+  //este useEffect esta pendiente de cuando se realice un cambio en el count, para realizar el guradado
+  useEffect(() => {
+    //aqui estoy guardando, la llave count, el valor(count) lo guardo en formato Json
+    localStorage.setItem("count", JSON.stringify(count));
+  }, [count]);
+
   return (
     <>
       <div className="header">
