@@ -38,6 +38,13 @@ background-size: cover;
     margin-bottom: 25px;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 250ms;
+}
+.card:hover{
+    transition: 250ms;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.35);
+    
 }
 
 /*los Titulos*/

@@ -65,7 +65,7 @@ function App() {
 
   //este useEffect esta pendiente de cuando se realice un cambio en el count, para realizar el guradado
   useEffect(() => {
-    //aqui estoy guardando, la llave count, el valor(count) lo guardo en formato Json
+    //aqui estoy guardando, la llave count, el valor(count) y lo guardo en formato Json
     localStorage.setItem("count", JSON.stringify(count));
   }, [count]);
 
